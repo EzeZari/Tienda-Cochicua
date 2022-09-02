@@ -1,0 +1,54 @@
+[
+    { "id": 1,
+      "marca": "Absolut",
+      "precio": 3500,
+      "tipo": "Vodka" 
+      
+    },
+    
+    { "id": 2,
+     "marca": "Smirnoff",
+     "precio": 1000,
+     "tipo": "Vodka"
+   },
+    { "id": 3,
+     "marca": "Sky",
+     "precio": 970, 
+     "tipo": "Vodka"
+   },
+    { "id": 4,
+     "marca": "Branca 1L",
+     "precio": 1600, 
+     "tipo": "Fernet"
+   },
+    { "id": 5,
+     "marca": "Branca 750ml",
+     "precio": 1350, 
+     "tipo": "Fernet"
+   },
+    { "id": 6,
+     "marca": "Bombay",
+     "precio": 5000, 
+     "tipo": "Gin"
+   },
+    { "id": 7,
+     "marca": "Beefeater",
+     "precio": 4700, 
+     "tipo": "Gin"
+   },
+    { "id": 8,
+     "marca": "La Salvaje",
+     "precio": 3000, 
+     "tipo": "Gin"
+   },
+    { "id": 9,
+     "marca": "Baron B",
+     "precio": 10, "tipo": "Champagne"
+   },
+    { "id": 10,
+     "marca": "Dom Perignon",
+     "precio": 20, 
+     "tipo": "Champagne"
+   }
+  ]
+  
