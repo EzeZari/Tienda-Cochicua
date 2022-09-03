@@ -40,7 +40,7 @@ data.forEach(producto => {
     templateCard.querySelector("h5").textContent = producto.marca 
     templateCard.querySelector ("p").textContent= producto.precio
     //AGREGAR IMAGEN 
-    //templateCard.querySelector ("img").setAttribute("src",producto.)
+    templateCard.querySelector ("img").setAttribute("src",producto.img)
     templateCard.querySelector(".btn-dark").dataset.id = producto.id
 
     const clone =templateCard.cloneNode(true)
@@ -141,3 +141,57 @@ pintarCarrito()
  }
  e.stopPropagation()
 } 
+
+
+//SweetAlert.................................................................................
+
+   
+    /* const btnAlert = document.querySelector("#btn")
+    btnAlert.addEventListener("click", alerta)  */
+
+    function alerta(){
+        const Toast = Swal.fire({
+        title:"¡Producto agregado correctamente!",
+        showConfirmButton: false,
+        position:"top-end",
+        icon: "success",
+        toast: true,
+        timer: 2500,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+      }, 
+      });
+    }
+
+    function VaciarCarrito(){
+        const Toast = Swal.fire({
+            title:"¡Carrito vaciado Correctamente!",
+            text:"",
+            showConfirmButton: true,
+            icon: "success",
+            didOpen: (toast) => {
+                toast.addEventListener("mouseenter", Swal.stopTimer);
+                toast.addEventListener("mouseleave", Swal.resumeTimer);
+          }, 
+          });
+
+    }
+
+
+    function finalizarCompra(){
+        const Toast = Swal.fire({
+            title:"¡Pedido realizado Correctamente!",
+            showConfirmButton: true,
+            icon: "success",
+            didOpen: (toast) => {
+                toast.addEventListener("mouseenter", Swal.stopTimer);
+                toast.addEventListener("mouseleave", Swal.resumeTimer);
+          }, 
+          });
+
+    }
+    
+
+    
