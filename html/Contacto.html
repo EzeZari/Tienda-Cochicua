@@ -62,7 +62,7 @@
         <div class="formulario__grupo" id="grupo__nombre">
             <label for="nombre" class="formulario__label">Nombre</label>
             <div class="formulario__grupo-input">
-                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
@@ -90,6 +90,16 @@
             </div>
             <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
         </div>
+<!--Cuerpo del mensaje-->
+     
+        <div class="formulario__grupo" id="grupo__nombre">
+            <label for="nombre" class="formulario__label">Mensaje</label>
+            <div class="formulario__grupo-input">
+                <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__input" name="nombre" id="nombre"  > - </textarea> 
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error"></p>
+        </div>
 
         <!-- Grupo: Terminos y Condiciones -->
         <div class="formulario__grupo" id="grupo__terminos">
@@ -98,6 +108,7 @@
                 Acepto los Terminos y Condiciones
             </label>
         </div>
+        
 
         <div class="formulario__mensaje" id="formulario__mensaje">
             <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
@@ -105,7 +116,7 @@
 
         <div class="formulario__grupo formulario__grupo-btn-enviar">
             <button type="submit" class="formulario__btn">Enviar</button>
-            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Su consulta fue enviada correctamente!</p>
         </div>
     </form>
 </main>
@@ -113,14 +124,15 @@
 
 <div class="iconos-contacto">
     <ul>
-        <li><a href="#" class="icorreo"><i class="icorreo"></i></a></li>
-        <li><a href="#" class="itelefono"><i class="itelefono"></i></a></li>
+        <li><a href="#" class="iCorreo"><i class="fa-thin fa-at"></i></i></a>Tienda.Cochicua@hotmail.com</li>
+        <li><a href="#" class="itelefono"><i class="fa-solid fa-phone"></i></i></a>231607569</li>
  
     </ul>
 </div>
 </main>
+ 
 
-
+ 
 
 <!--
     EMPIEZA EL FOOTER
@@ -149,5 +161,7 @@
       </footer>
 
       <script src="/main.js"></script>
+      <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/2eae1ed357.js" crossorigin="anonymous"></script>
 </body>
 </html>

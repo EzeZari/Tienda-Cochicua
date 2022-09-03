@@ -179,8 +179,10 @@ pintarCarrito()
 
     }
 
+const btnCompra = document.getElementById("#btnCompra")
 
     function finalizarCompra(){
+
         const Toast = Swal.fire({
             title:"¡Pedido realizado Correctamente!",
             showConfirmButton: true,
@@ -190,7 +192,7 @@ pintarCarrito()
                 toast.addEventListener("mouseleave", Swal.resumeTimer);
           }, 
           });
-
+        
     }
     
 
