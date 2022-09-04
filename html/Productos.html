@@ -17,20 +17,16 @@
 <body>
 <!-- 
     Barra de navegacion --------------------------------------------------------------------------------------------------------------------->
-<header> 
-    <div class="menu">
-    <img src="/img/Logo1Png.png" alt="">
-    <nav> 
-    <ul>
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="Nosotros.html">Nosotros</a></li>
-        <li><a href="Productos.html">Productos</a></li>
-        <li><a href="Contacto.html">Contacto</a></li>
-    </ul>
-    </nav>
-    </div>  
-    </header>    
-
+    <header> 
+      <a href="/index.html"><img src="/Img/Logo1Png.png" alt="" class="imgLogo"  ></a>
+      <div class="items">
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="Nosotros.html">Nosotros</a></li>
+      <li><a href="Productos.html">Productos</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+      </div> 
+  </header>
+  <div class="imgtitulo">
 
     <main >
     <div class="container">
@@ -51,12 +47,14 @@
         <tbody id="items"></tbody>
         <tfoot>
           <tr id="footer">
-            <th scope="row" colspan="5">Carrito vacío¡comience a comprar!</th>
+            <th scope="row" colspan="5">Carrito vacío ¡comience a comprar!</th>
           </tr>
         </tfoot>
       </table>
+      <button class="btn btn-dark" onclick="finalizarCompra()" id="btnCompra"> Confirmar Compra</button>
 
-    <div class="row" id="cards"></div>
+
+    <div class="cards" id="cards"></div>
     </div>
 
     <!--
@@ -74,7 +72,6 @@
         
     </template>
     
-      <button class="btn btn-dark" onclick="finalizarCompra()" id="btnCompra"> Confirmar Compra</button>
     
     
     <template id="template-carrito">
@@ -103,7 +100,11 @@
             <img src="" alt="" class="img-card">
             <div class="card-body">
               <h5>Titulo</h5>
-              <strong>$ </strong><p>precio</p>
+              <div class="price-container" style="display: flex; justify-content: center;">
+                <b>$ </b>
+                <p>precio</p>
+              </div>
+             
               <button class="btn btn-dark" id="btn" onclick="alerta()">Comprar</button>
             </div>
           </div>
@@ -122,27 +123,25 @@
 <!--
     EMPIEZA EL FOOTER ----------------------------------------------------------------------------------------------------------------------------->
     <footer class="pie-pagina">
-        <div class="grupo1">
-            <div class="box">
-                <figure> 
-                  <a href="#">
-                  <!--<img src="Img/Logo1Png.png" alt=""> -->
-                  </a>  
-                </figure>
-            </div>
-            <div class="box">
-                <h2>Sobre Nosotros</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequatur.</p>
-            </div>
-            <div class="box">
-               <h2>Contacto</h2> 
-               <label for="">Correoelectronico@hotmail.com</label>
-            </div>
-            <div class="grupo2"> 
-                <small> &copy; 2022 <b>Tienda Cochicua</b> - Derechos Reservados</small>
-            </div>
-        </div>
-      </footer>
+      <img src="/Img/Logo1Png.png" alt="">
+  
+      <div class="nosotros">
+          <h2>Sobre Nosotros</h2>
+              <p>Somos una distribuidora mayorista de bebidas alcohólicas importadas.
+                Hacemos envíos a Capital Federal, GBA y a todo el país.
+                
+                </p>
+      </div>
+  
+     <div class="contacto">
+         <h2>Contacto</h2> 
+      <div>
+          <label for="">Correoelectronico@hotmail.com</label>
+          <small> &copy; 2022 <b>Tienda Cochicua</b> - Derechos Reservados</small>
+       </div>
+     
+     </div>
+    </footer>
       <script src="/carrito.js"></script>
 </body>
 </html>
