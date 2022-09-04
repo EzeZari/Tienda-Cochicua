@@ -1,0 +1,64 @@
+[
+    { "id": 1,
+      "marca": "Absolut",
+      "precio": 3500,
+      "tipo": "Vodka", 
+      "img": "https://cepadevinos.com/wp-content/uploads/2017/07/Baron_B_Extra_Brut_bvcpfz.jpg"
+      
+    },
+    { "id": 2,
+     "marca": "Smirnoff",
+     "precio": 1000,
+     "tipo": "Vodka"
+   },
+    { "id": 3,
+     "marca": "Sky",
+     "precio": 970, 
+     "tipo": "Vodka"
+   },
+    { "id": 4,
+     "marca": "Fernet Branca 1L",
+     "precio": 1600, 
+     "tipo": "Fernet"
+   },
+    { "id": 5,
+     "marca": "Fernet Branca 750ml",
+     "precio": 1350, 
+     "tipo": "Fernet"
+   },
+    { "id": 6,
+     "marca": "Gin Bombay",
+     "precio": 5000, 
+     "tipo": "Gin"
+   },
+    { "id": 7,
+     "marca": "Gin Beefeater",
+     "precio": 4700, 
+     "tipo": "Gin"
+   },
+    { "id": 8,
+     "marca": "Gin La Salvaje",
+     "precio": 3000, 
+     "tipo": "Gin"
+   },
+    { "id": 9,
+     "marca": "Baron B",
+     "precio": 6300, "tipo": "Champagne"
+   },
+    { "id": 10,
+     "marca": "Chandon",
+     "precio": 2500, 
+     "tipo": "Champagne"
+   },
+   { "id": 11,
+     "marca": "Chandon Rose",
+     "precio": 20, 
+     "tipo": "Champagne"
+   },
+   { "id": 12,
+     "marca": "Navarro Correas",
+     "precio": 20, 
+     "tipo": "Champagne"
+   }
+  ]
+  
